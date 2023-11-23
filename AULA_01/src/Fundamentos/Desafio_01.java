@@ -9,8 +9,11 @@ public class Desafio_01 {
 		
 		if (rest < 0) {
 			System.out.println("Numero negativo.");
-		}else {
+		}else if rest > 0{
 			System.out.println("Numero positivo.");
+			
+		}else {
+			System.out.println("Numero nulo.");
 		}
 	}
 }
