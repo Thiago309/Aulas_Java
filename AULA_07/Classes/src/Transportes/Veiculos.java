@@ -1,18 +1,28 @@
 package Transportes;
 import java.util.Date;
+
 public class Veiculos {
+	   
+    public String nome;
+    public String cor;
+    double preco;
+    
 
-	public String nome;
-	public String modelo;
-	public Double preco;
-	public String cor;
-	
-	public Veiculos(String _nome, String _modelo, Double _preco, String _cor){
+    public Veiculos(String nome, String cor, double preco) {
+        this.nome = nome;
+        this.cor = cor;
+        this.preco = preco;
+    }
 
-		this.nome = nome;
-		this.modelo = modelo;
-		this.preco = preco;
-		this.cor = cor;
-	
-	}
+    public void andar(){
+        System.out.println("Andou");
+    }
+    
+    public void buzinar(){
+    	System.out.println("Buzinou");
+    
+    }
+    public void parar() {
+    	System.out.println("Parou");
+    }
 }
